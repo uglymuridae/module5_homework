@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            let inputed_number = prompt('Введите число ниже >>');
+            console.log(typeof inputed_number);
+            inputed_number = Number(inputed_number);
+            if (typeof inputed_number === 'number' && !(typeof inputed_number === 'NaN')){
+                let odd_even = inputed_number%2;
+             if( odd_even === 0){
+                 console.log("Число чётное.");
+             }   else  {
+                 console.log("Число нечётное.");
+             }
+            } else {
+                console.log("У-упс... Кажется, вы ошиблись!");
+            }
+        </script>
+    </body>
+</html>
